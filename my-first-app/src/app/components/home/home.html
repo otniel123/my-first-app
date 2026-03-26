@@ -1,1 +1,23 @@
 <p>Opa</p>
+
+<!--<button [attr.teste]="idButton"></button>  Atributo dinamico -> é pego da classe-->
+
+<button (click)="submit()">Clique aqui</button>
+
+@if(deveMostrarTtitulo){
+    <h1>Meu titulo</h1>
+} 
+@else if(nome == "Otniel"){
+    <h1>Meu titulo para o Otniel</h1>
+}
+@else{
+    <h1>Não foi verdadeiro</h1>
+}
+
+@for(item of listItems; track item){
+    <p>{{item}}</p>
+}
+
+<h1>
+    {{minhaPropsDeFora}}
+</h1>

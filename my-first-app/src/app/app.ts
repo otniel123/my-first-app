@@ -10,4 +10,8 @@ import { Home } from './components/home/home';
 })
 export class App {
   protected readonly title = signal('my-first-app');
+
+  logar(event: string){
+    console.log(event)
+  }
 }
