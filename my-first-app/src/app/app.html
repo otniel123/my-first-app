@@ -1,2 +1,7 @@
+<nav>
+  <a routerLink="/home">Home</a>
+  <a routerLink="/sobre">Sobre</a>
+</nav>
+<app-home [name]="nomeDinamico()"></app-home>
+<button (click)="mudarValorProps()">Incrementar número ({{ nomeDinamico() }})</button>
 <router-outlet />
-<app-home name="Random value" (emitindoValorName)="logar($event)"></app-home>
